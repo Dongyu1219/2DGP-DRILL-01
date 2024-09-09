@@ -45,41 +45,104 @@ twice[2]
 'sana'
 twice[-1]
 'zwi'
->>> black_pink = ['jisu', 'jeni', 'rose']
->>> len(black_pink)
+black_pink = ['jisu', 'jeni', 'rose']
+len(black_pink)
 3
->>> 
->>> unite = twice + black_pink
->>> len(unite)
+
+unite = twice + black_pink
+len(unite)
 7
->>> type(unite)
+type(unite)
 <class 'list'>
->>> #리스트와 리스트는 더할 수 있다
->>> 
->>> unite.sort()
->>> unite[0]
+#리스트와 리스트는 더할 수 있다
+
+unite.sort()
+unite[0]
 'jeni'
->>> unite[:3]
+unite[:3]
 ['jeni', 'jihyo', 'jisu']
->>> 
->>> best3=unite[:3]
->>> best3
+
+best3=unite[:3]
+best3
 ['jeni', 'jihyo', 'jisu']
->>> low3
+low3
 Traceback (most recent call last):
   File "<pyshell#43>", line 1, in <module>
     low3
 NameError: name 'low3' is not defined
->>> low3 = unite[-3:]
->>> low3
+low3 = unite[-3:]
+low3
 ['rose', 'sana', 'zwi']
->>> unite.remove('momo')
->>> unite.insert(0, 'daehyun')
->>> unite
+unite.remove('momo')
+unite.insert(0, 'daehyun')
+unite
 ['daehyun', 'jeni', 'jihyo', 'jisu', 'rose', 'sana', 'zwi']
->>> del.unite[-1]
+del.unite[-1]
 SyntaxError: invalid syntax
->>> del unite[-1]
->>> unite
+del unite[-1]
+unite
 ['daehyun', 'jeni', 'jihyo', 'jisu', 'rose', 'sana']
->>> #파이썬은 리스트 자료구조가 내장되어있다
+#파이썬은 리스트 자료구조가 내장되어있다
+['daehyun', 'jeni', 'jihyo', 'jisu', 'rose', 'sana']
+['daehyun', 'jeni', 'jihyo', 'jisu', 'rose', 'sana']
+
+
+
+
+score = {'momo':80 , , 'ziwi': 85  , 'sana':98   }
+SyntaxError: invalid syntax
+
+score = {'momo':80, 'ziwi': 85  , 'sana':98   }
+type(score)
+<class 'dict'>
+score['momo'}
+SyntaxError: closing parenthesis '}' does not match opening parenthesis '['
+score['momo']
+80
+score[momo]
+Traceback (most recent call last):
+  File "<pyshell#63>", line 1, in <module>
+    score[momo]
+NameError: name 'momo' is not defined
+score['ziwi']
+85
+score['jeni']=100
+>>> score['jeni']
+100
+>>> score.sort()
+Traceback (most recent call last):
+  File "<pyshell#67>", line 1, in <module>
+    score.sort()
+AttributeError: 'dict' object has no attribute 'sort'
+>>> #dictionary sort 불가
+>>> AttributeError: 'dict' object has no attribute 'sort'#dictionary sort 불가
+SyntaxError: invalid syntax
+>>> 
+>>> len(socre)
+Traceback (most recent call last):
+  File "<pyshell#71>", line 1, in <module>
+    len(socre)
+NameError: name 'socre' is not defined. Did you mean: 'score'?
+>>> len(score)
+4
+>>> score.values()
+dict_values([80, 85, 98, 100])
+>>> sum([1,2,3,4,5,6,7,8,9,10])
+55
+>>> #sum은 리스트 안에 있은 값을 모두 더하는 함수
+>>> total = sum(score.values())
+>>> total
+363
+>>> avg = total / len(score)
+>>> avg
+90.75
+>>> 363/4
+90.75
+>>> 
+>>> #tuple : 상수( 값을 바꿀 수 없음)
+>>> #시험에 나옴
+>>> 
+>>> #set: 집합
+>>> #중복허용, 순서가 없음
+>>> #시험
+>>> 
